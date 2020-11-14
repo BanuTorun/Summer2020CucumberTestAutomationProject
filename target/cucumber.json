@@ -1,0 +1,191 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-13T03:03:56.403Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3715000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Create calendar event with default time",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-calendar-events;create-calendar-event-with-default-time",
+        "after": [
+          {
+            "result": {
+              "duration": 630000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1313000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9378000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6672000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to \"Activities\" and \"Calendar Events\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Activities\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Calendar Events\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on create calendar event button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCalenderEventStepDefinition.user_clicks_on_create_calendar_event_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2772000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user adds new calendar event information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCalenderEventStepDefinition.user_adds_new_calendar_event_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "B20 Graduation Party"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  "All B20 friends are invited for this party!"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4078000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user verifies that new calendar event is displayed:",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCalenderEventStepDefinition.user_verifies_that_new_calendar_event_is_displayed(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "B20 Graduation Party"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  "All B20 friends are invited for this party!"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@calendar_events"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "As user, I want to be able to create calendar events",
+    "description": "",
+    "id": "as-user--i-want-to-be-able-to-create-calendar-events",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/activities/CreateCalendarEvent.feature",
+    "tags": [
+      {
+        "name": "@calendar_events",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
