@@ -1,21 +1,21 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "fb127a2e-943e-4955-b6df-798f59c7620a",
+    "id": "a8176805-ef25-49ea-8b85-5339d3f07fb0",
     "feature": "As user, I want to be able to create calendar events",
     "scenario": "Create calendar event with default time",
-    "start": 1605236636403,
-    "group": 12,
+    "start": 1609620750476,
+    "group": 1,
     "content": "",
     "tags": "@calendar_events,@smoke,",
-    "end": 1605236665332,
-    "className": "passed"
+    "end": 1609620902416,
+    "className": "failed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([
   {
-    "id": 12,
-    "content": "Thread[pool-2-thread-1,5,main]"
+    "id": 1,
+    "content": "Thread[main,5,main]"
   }
 ]);
 });

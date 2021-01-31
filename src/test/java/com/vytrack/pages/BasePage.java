@@ -11,6 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+
+/*
+These concepts are commonly used in framework development. Abstract class is used in defining a common super class
+while writing Page Object Model layer of the framework. We usually create an abstract class named BasePage to have all
+common members for every page written in this class example getPageTitle().
+• Then each Page class (HomePage, LoginPage, DashboardPage etc.) inherit from BasePage. Sometimes one may need to
+change the behavior of methods implemented in superclass. So, subclass has freedom to override that method where we
+use polymorphism. This is how we use Abstract class in real projects.
+ */
 public abstract class BasePage {
 
     @FindBy(className = "oro-subtitle")
@@ -23,10 +32,12 @@ public abstract class BasePage {
     protected List<WebElement> loaderMask;
 
     public BasePage() {
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     public String getPageSubTitleText() {
+
         return pageSubTitle.getText();
     }
 
@@ -60,6 +71,7 @@ public abstract class BasePage {
     }
 
     public void clickSaveAndClose(){
+
         BrowserUtils.clickOnElement(saveAndCloseBtn);
     }
 }

@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: As user, I want to be able to create calendar events
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.287 s - in As user, I want to be able to create calendar events
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 34,951.935 s <<< FAILURE! - in As user, I want to be able to create calendar events
+As user, I want to be able to create calendar events.Create calendar event with default time  Time elapsed: 34,951.933 s  <<< ERROR!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Banus-MacBook-Air.local', ip: '2601:248:105:7afa:9989:41ff:45cf:64dc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /tmp/.com.google.Chrome.vZ0O2j}, goog:chromeOptions: {debuggerAddress: localhost:35069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e53772a815cb9258374ded7894a...}
+Session ID: e53772a815cb9258374ded7894a9cf46
+Caused by: java.net.SocketTimeoutException: timeout
+Caused by: java.net.SocketTimeoutException: Read timed out
+
+As user, I want to be able to create calendar events.Create calendar event with default time  Time elapsed: 0 s  <<< ERROR!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Banus-MacBook-Air.local', ip: '2601:248:105:7afa:9989:41ff:45cf:64dc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /tmp/.com.google.Chrome.vZ0O2j}, goog:chromeOptions: {debuggerAddress: localhost:35069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e53772a815cb9258374ded7894a...}
+Session ID: e53772a815cb9258374ded7894a9cf46
+Caused by: java.net.ConnectException: Failed to connect to /54.237.122.57:4444
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+

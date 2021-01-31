@@ -3,12 +3,13 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-13T03:03:56.403Z",
+        "start_timestamp": "2021-01-02T20:52:30.476Z",
         "before": [
           {
             "result": {
-              "duration": 3715000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.Hooks.setup(Hooks.java:29)\n",
+              "duration": 76331000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
@@ -22,8 +23,9 @@
         "after": [
           {
             "result": {
-              "duration": 630000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:56)\n",
+              "duration": 75424000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +37,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1313000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user is on the login page",
@@ -47,8 +49,8 @@
           },
           {
             "result": {
-              "duration": 9378000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user logs in as a \"store manager\"",
@@ -65,8 +67,7 @@
           },
           {
             "result": {
-              "duration": 6672000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user navigates to \"Activities\" and \"Calendar Events\"",
@@ -87,8 +88,7 @@
           },
           {
             "result": {
-              "duration": 130000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks on create calendar event button",
@@ -99,8 +99,7 @@
           },
           {
             "result": {
-              "duration": 2772000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user adds new calendar event information",
@@ -125,8 +124,8 @@
           },
           {
             "result": {
-              "duration": 201000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "user clicks on save and close button",
@@ -137,8 +136,8 @@
           },
           {
             "result": {
-              "duration": 4078000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 14,
             "name": "user verifies that new calendar event is displayed:",
